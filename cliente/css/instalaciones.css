@@ -1,0 +1,293 @@
+.cliente-page{
+
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.cliente-page h2{
+    color: #fff;
+}
+
+
+.edit-link2 {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 20px;
+    width: 100px;
+    height: 45px;
+    background-color: var(--wine);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-link2:hover {
+    background-color: var(--wine2);
+}
+
+/* filtros */
+.chart-controls2{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.chart-controls2 label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+
+
+
+}
+
+.chart-controls2 select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #fff;
+    
+    width: 200px;
+    max-width: 100%;
+}
+
+.chart-controls2 div {
+    margin: 10px;
+    width: fit-content;
+}
+
+
+.cliente-page h2, h4{
+    text-align: center;
+}
+
+.chart-controls{
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
+.chart-controls2 .s1{
+    text-align: center;
+    width: 50%;
+}
+
+
+
+.chart-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Style for toggle buttons */
+
+.toggle-btn {
+    border: none;     
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* botones por defecto */
+
+#btn-humedad.on{
+    background-color: #61be23;
+
+}
+
+#btn-humedad.off{
+    background-color: #cbecb5;
+}
+
+#btn-luminosidad.on{
+   
+        background-color: #43748F;
+}
+
+#btn-luminosidad.off{
+    
+    background-color: #8dc3df;
+}
+
+#btn-ph.on{
+    background-color: #618B25;
+}
+
+#btn-ph.off{
+    background-color: #bff377;
+}
+
+#btn-Salinidad.off{
+    background-color: #810053;
+}
+
+#btn-Salinidad.on{
+    background-color: #59003a;
+}
+
+#btn-Temperatura.off{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#btn-Temperatura.on{
+    background-color: #000000;
+}
+
+#btn-none{
+    /* background-color: #82846d; */
+    background-color: #43748F;
+}
+
+#btn-all{
+    background-color: #8dc3df;
+
+}
+
+
+#btn-none:hover{
+    background-color: #636454;
+}
+
+#btn-all:hover{
+    background-color: #82846d;
+
+}
+
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+.chart-container h3{
+    padding: 100px;
+    text-align: center;
+}
+
+#chart{
+
+    position: relative;
+
+    height:500px !important;
+
+}
+
+.register-action-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.register-action-group a{
+    display: block;
+}
+
+@media (max-width: 900px) {
+
+    .chart-container {
+        position: relative;
+        height: fit-content;
+        margin: 0 auto;
+        background-color: #fff;
+        /* background-color: red; */
+    }
+
+    .edit-link2 {
+
+        font-size: 16px !important;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cliente-page{
+        width: 100%;
+    }
+
+    .chart-controls2{
+        flex-direction: column;
+    }
+    
+
+
+    .chart-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .toggle-btn {
+
+    padding: 2px 2px;
+    margin: 2px 0;
+    font-size: 12px;
+    width: 100px;
+    height: 50px;
+
+    }
+
+
+
+    .chart-container {
+        position: relative;
+        margin: 0 auto;
+        height: fit-content;
+        background-color: #fff;
+        /* background-color: red; */
+    }
+
+    .chart-controls2 label {
+        font-size: 16px;
+        margin-right: 10px;
+        color: #fff;
+        font-weight: bold;
+    
+    
+    
+    }
+    
+    .chart-controls2 select {
+        padding: 8px 12px;
+        font-size: 14px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background-color: #fff;
+        
+        width: 200px;
+        max-width: 100%;
+    }
+
+
+}
+
+

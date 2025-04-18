@@ -1,0 +1,39 @@
+.user-table-container {
+    width: 90%;
+    margin: 0 auto; /* Center the container */
+}
+
+#user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#user-table th, #user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.user-actions button {
+    padding: 8px 16px;
+    background-color: var(--wine);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-actions button:hover {
+    background-color: var(--wine2);
+}

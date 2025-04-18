@@ -1,0 +1,208 @@
+/* --------------------------------- */
+/* ----------Estilos de Menu */
+/* ---------------------------------- */
+
+.menu-cliente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 2px solid black;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__logo-image {
+  position: relative;
+  height: 80px;
+}
+
+.header__nav-list {
+
+  position: absolute;
+  right: 80px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  list-style: none;
+  background-color: var(--white);
+  z-index: 999;
+  gap: 1rem;
+}
+
+.header__nav-item {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header__nav-item a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__nav-item a:hover{
+
+  border-bottom: 1px solid var(--black);
+}
+
+
+/* iconos del menu */
+
+.menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: 10px;  
+}
+
+.menu-icon .bi-list{
+  font-size: 50px;
+  color: #000000;  
+}
+
+.menu-icon:hover .bi-list{
+
+  color: var(--wine);
+
+}
+
+
+/* icono de cerrar */
+
+.close-icon {
+  display: none;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 25px;
+}
+
+/* icono de perfil */
+
+.bi-person-circle{
+
+  font-size: 45px;
+  color: #000000;
+  margin: 10px;
+}
+
+.profile {
+  font-size: 45px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  text-align: center;
+  list-style: none;
+
+}
+
+.profile a{
+
+  text-decoration: none;
+  
+}
+
+.profile span{
+  
+  display: block;
+  font-size: 12px;
+  color: #000000;
+
+}
+
+.profile:hover .bi-person-circle{
+
+  color: var(--wine);
+
+}
+
+
+/* --------------------------------- */
+/* ----------Estilos Pie de Pagina------------- */
+/* ---------------------------------- */
+
+.footer {
+  position: relative;
+  border-top: 2px solid black;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;  
+  text-align: center;
+
+}
+  
+.copyright {
+line-height: 50px; 
+margin: 0 auto;
+}
+
+/* --------------------------------- */
+/* ----------Estilos Responsive------*/
+/* ---------------------------------- */
+
+@media (max-width: 800px) {
+
+  .header__nav-list{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    background-color: var(--white);
+    border: 2px solid #000000;
+  }
+
+  .header__nav-item{
+    display: block;
+    padding: 20px 0;
+  }
+
+  .menu-icon{
+    
+    display: block;
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  .close-icon{
+    display: block;
+    margin: 0 auto;
+    font-size: 40px;
+      
+  }
+
+  .profile {
+    font-size: 45px;
+    color: #000000;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 75px;
+  }
+
+
+}

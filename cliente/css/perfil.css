@@ -1,0 +1,197 @@
+/* Estilos para el perfil de usuario */
+
+.perfil-page {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+.perfil-container {
+    background-color: #fff;
+    margin-top: 6%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.perfil-container h2 {
+    margin-bottom: 20px;
+}
+
+.perfil-info p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.perfil-info p strong {
+    display: inline-block;
+    width: 150px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.perfil-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.perfil-table th, .perfil-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.perfil-table th {
+    background-color: #f2f2f2;
+}
+
+.perfil-actions {
+    margin-top: 20px;
+    text-align: left; 
+}
+/* Estilo para el enlace de editar perfil */
+.edit-profile-link {
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-profile-link:hover {
+    background-color: #618B25;
+}
+
+.edit-profile-link2 {
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--wine);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-profile-link2:hover {
+    background-color: var(--wine2);
+}
+
+/* Media queries para hacer las tablas más responsivas */
+@media (max-width: 600px) {
+    .perfil-info p strong {
+        display: block;
+        width: 100%;
+    }
+
+    .perfil-info p span {
+        display: block;
+        width: 100%;
+    }
+
+    .perfil-table th, .perfil-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .perfil-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .perfil-actions button {
+        padding: 8px 16px;
+    }
+}
+
+
+/* ---------------------- */
+/* Editar Perfil */
+/* ------------------ */
+
+/* Estilos para la página de editar perfil */
+
+.editar-perfil-page {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.editar-perfil-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.editar-perfil-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: left; /* Alinea el botón a la izquierda */
+}
+
+
+.form-message p{
+    text-align: left;
+}
+
+/* Media queries para hacer el formulario más responsivo */
+@media (max-width: 600px) {
+    .editar-perfil-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form-actions button {
+        padding: 8px 16px;
+    }
+}

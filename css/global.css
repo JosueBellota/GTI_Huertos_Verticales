@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+
+}
+
+:root {
+    --black:#000000 ;
+    --wine: #810053;
+    --wine2: #59003a;
+    --green: #61be23;
+    --dark-green: #618B25;
+    --blue: #43748F;
+    --gray: #82846d;
+    --dark-gray: #636454;
+    --light-gris: #f1f2f6;
+    --white: #ffffff;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--white); */
+    font-family: "Montserrat", sans-serif;
+    /* color: #333; */
+}
+
+/* ------------------------------*/
+/* container DE ESTILOS INICIO --*/
+/* ------------------------------*/
+
+/* Version PC */
+
+h1,h2,h3{
+    font-weight: 600;
+}
+
+h1{
+    font-size: 48px;
+    
+}
+h2{
+    font-size: 36px;
+    color: var(--wine);
+}
+h3{
+    font-size: 28px;
+    color: var(--wine2);
+}
+h4{
+    font-size: 22px;
+}
+
+p{
+    font-size: 16px;
+    color: var(--black);
+}
+
+/* espacio */
+.space{
+    margin: 25px 0;
+}
+
+
+/* botones */
+.btn{
+
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* boton verde */
+
+.btn-green {
+    color: var(--white);
+    background-color: var(--green);    
+}
+
+.btn-green:hover {
+    background-color: var(--dark-green);
+}
+
+/* boton vino */
+
+.btn-wine {
+    color: var(--white);
+    background-color: var(--wine);    
+}
+
+.btn-wine:hover {
+    background-color: var(--wine2);
+}
+
+/* boton gris */
+
+.btn-dark {
+    color: var(--white);
+    background-color: var(--gray);    
+}
+
+.btn-dark:hover {
+    background-color: var(--dark-gray);
+}
+
+/* boton link */
+
+.btn-link{
+
+    color: var(--blue); 
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue);
+    transition: border-bottom 0.3s ease;
+
+}
+
+.btn-link:hover{
+    border-bottom: 1px solid transparent;
+}
+
+/* logo */
+
+.logo{
+
+    width: 200px;
+}
+
+/* formulario */
+
+.screen{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.screen2{
+    height: 100%;
+    padding: 50px 0 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.container-form{
+
+    min-height: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-form h1{
+
+    margin: 40px;
+}
+
+.register-action-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.register-action-group a{
+    display: block;
+    margin-left: 20px;
+}
+
+
+.alert-danger{
+    color: var(--wine2);
+}
+.alert-green{
+    color: var(--dark-green);
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid ; */
+    border-radius: 4px;
+}
+
+
+.button-link {
+    color: var(--wine2);
+    text-decoration: none;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.form-group-policy{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.form-group-policy input{
+    margin-right: 20px;
+}
+/* ----- diseño de una caja -----*/
+
+.container{
+
+    /* codigo general de caja */
+    margin: 0px auto;
+    padding: 20px 0px;
+    width: 90%;
+    background-color: var(--white);
+
+    /* el flex-box lo cambian de acuerdo a su tarea */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* ----- diseño de una caja con imagen de fondo -----*/
+
+.image-container{
+
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/panel.png'); 
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.image-title{
+
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.image-box {
+
+    max-width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+/* diseño de tabla */
+
+.table-box {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+}
+
+.table-box th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table-box th {
+    background-color: var(--dark-green);
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-box tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* diseño de tabla */
+
+.space{
+    margin: 25px 0;
+}
+
+
+    @media (max-width: 788px) {
+
+    /* --------------------------------- */
+    /* ----------Version Movil------------- */
+    /* ---------------------------------- */
+    
+    h1{
+        font-size: 32px;
+        
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    
+    p{
+        
+        font-size: 13px;
+        width: 80%;
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+    /* ajustando la caja de la imagen */
+
+    .image-box{
+        max-width: 100%;
+        border: none;
+        border-radius:0px;
+    }
+}
+

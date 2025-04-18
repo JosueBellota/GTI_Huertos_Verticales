@@ -1,0 +1,95 @@
+
+/* Estilos específicos para el menú de huertos */
+.welcome {
+    padding: 20px;
+    background-image: url('../../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.welcome h1,
+.welcome h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.huerto-msg{
+    background-color: transparent;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    
+    padding: 20px;
+    border-radius: 8px;
+}
+.huerto-msg p{
+
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--light-gris);
+}
+.huertos-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.huerto-card {
+    background-color: #f8f9fa; /* Color de fondo de las tarjetas de huerto */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho máximo de las tarjetas */
+    text-align: center;
+}
+
+/* Estilos para los iconos de Bootstrap */
+.huertos-gallery .btn i {
+    margin-right: 5px; /* Espacio entre el icono y el texto del botón */
+}
+
+.huertos-gallery .bi {
+    font-size: 1.5rem; /* Tamaño base de los iconos Bootstrap */
+}
+
+
+.huerto-card h3 {
+    margin-bottom: 10px;
+}
+
+.huerto-card a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--wine);
+}
+
+
+.huerto-actions {
+    margin-top: 15px;
+}
+
+.huerto-actions a,
+.huerto-actions form {
+    margin-right: 10px;
+    display: inline-block;
+
+}
+.add-huerto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.add-huerto a{
+    display: block;
+    flex: 1 1 100%;
+}
+
+.add-huerto a .bi-plus-circle{
+
+    font-size: 100px;
+    color: var(--wine);
+}

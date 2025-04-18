@@ -1,0 +1,43 @@
+/* politicas.css */
+
+.privacy-policy-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.privacy-policy-container {
+    max-width: 800px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-container h1 {
+    margin-bottom: 20px;
+}
+
+.privacy-policy-container h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-container p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.privacy-policy-container ul {
+    margin-bottom: 20px;
+}
+
+.privacy-policy-container ul li {
+    margin-bottom: 10px;
+}
