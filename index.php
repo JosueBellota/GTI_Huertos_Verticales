@@ -2,8 +2,6 @@
 
 
 <div class="landing-page">
-    <div class="background-image">
-    </div>
     <div class="content-container">
         <div class="content">
             <h1>SENSORES <br>

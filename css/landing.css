@@ -7,30 +7,12 @@
 .landing-page {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 140px);
     margin: 0 auto;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
 
 }
-
-.background-image {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    min-height: calc(100vh - 80px); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/panel.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-
-
-}
-
 
 .content-container {
     width: 80%;
