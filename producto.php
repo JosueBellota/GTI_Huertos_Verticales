@@ -1,6 +1,6 @@
 <?php include('includes/menu.php'); ?>
-
-    <div class="container container-product">
+<div class="container-product">
+    <div class="card-product">
         <div class="gallery">
             <div class="main-image">
                 <img id="mainImg" src="img/huerto-5.jpg" alt="Main Image">
@@ -30,7 +30,7 @@
             <h4>Disponible en las grandes superficies</h4>
         </div>
     </div>
-
+</div>
     <script src="js/product-gallery.js"></script>
 
     

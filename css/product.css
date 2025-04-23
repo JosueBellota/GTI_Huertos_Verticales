@@ -1,18 +1,29 @@
 
-/* --------------------------------- */
-/* ----------Estilos Pagina Producto------------- */
-/* ---------------------------------- */
+/* -------------------------------------------- */
+/* ----------Estilos Pagina Producto ------------- */
+/* ---------------------------------------- */
 
 .container-product {
+    
+    height: calc(100vh - 140px);
+    background-color: transparent;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+
+}
+
+.card-product{
     display: flex;
-    min-height:75vh;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .gallery {
-    width: 60%;
     padding: 20px;
     box-sizing: border-box;
     height: fit-content;
+
 }
 
 .main-image {
@@ -54,6 +65,7 @@
     margin: 20px;
     box-sizing: border-box;
     border: 1px solid var(--gray);
+    background-color: var(--white);
     height: fit-content;
 
 }
@@ -75,45 +87,77 @@
 /* --------------------------------- */
 /* ----------Estilos Responsive---- */
 /* ---------------------------------- */
+@media (max-width: 1115px) {
+
+    .card-product{
+
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .description {
+    
+        width: 100%;
+    }
+
+    .gallery {
+
+        width: 100%;
+        padding: 0px;
+
+    }
+    
+    .main-image{
+        border: 2px solid white;
+    }
+    
+    .thumbnails{
+        display: none;
+    }
+    
+
+    
+    .thumbnails {
+        justify-content: flex-start;
+    }
+    
+    .slider-arrows {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    .slider-arrows p{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+}
 
 @media (max-width: 768px) {
+  
 
-.container-product{
+    .card-product{
+        flex-direction: column;
+        height: calc(100vh - 140px);
+    }
 
-    flex-direction: column;
-    height: 100%;
-} 
-.gallery {
-    width: 100%;
-    height: fit-content;
-}
+    .description {
+        flex: 0 0 40%;
+        order: 1;
+    }
+  
+    .gallery {
+        flex: 0 0 60%;
+        order: 2;
+    }
 
-
-.thumbnails{
-    display: none;
-}
-
-
-.description {
-
-    width: 90%;
-    border: none;
-}
-
-.thumbnails {
-    justify-content: flex-start;
-}
-
-.slider-arrows {
-    width: 50%;
-    display: flex;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.slider-arrows p{
-    text-align: center;
-    font-size: 40px;
-    color: black;
-}
-}
+    
+  }
+  
