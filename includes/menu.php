@@ -23,6 +23,8 @@
 <link rel="stylesheet" href="css/landing.css">
 <link rel="stylesheet" href="css/nosotros.css">
 <link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/forms.css">
 <link rel="stylesheet" href="css/politicas.css">
 
 </head>
@@ -40,10 +42,9 @@
             <ul class="header__nav-list">
 
                 <li class="header__nav-item"><a href="index.php">Inicio</a></li>
-
                 <li class="header__nav-item"><a href="producto.php">Producto</a></li>
                 <li class="header__nav-item"><a href="nosotros.php">Nosotros</a></li>
-                <li class="header__nav-item"><a href="register.php">Registrarse</a></li>
+                <!-- <li class="header__nav-item"><a href="register.php">Registrarse</a></li> -->
                 <li class="header__nav-item"><a href="login.php">Iniciar Sesión</a></li>
                 
 

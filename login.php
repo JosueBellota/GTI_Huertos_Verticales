@@ -1,8 +1,6 @@
 <?php
-// Mensaje inicial
-$initial_msg = "Rellena tus credenciales";
 
-// Mensaje de error de inicio de sesión
+$initial_msg = "Rellena tus credenciales";
 $login_err = "";
 
 // Verificar si se envió el formulario

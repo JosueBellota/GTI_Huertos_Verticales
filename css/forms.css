@@ -1,0 +1,165 @@
+.screen{
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+    
+}
+
+.screen2{
+    height: 100%;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url('../img/panel.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+    
+}
+
+.container-form{
+
+    height: fit-content;
+    max-width: 500px;
+    min-width: 200px;
+    background-color: var(--white);
+    padding: 40px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-form h1{
+
+    margin: 40px;
+}
+
+.register-action-group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.register-action-group a{
+    display: block;
+    margin-left: 20px;
+}
+
+
+
+
+.alert-danger{
+    color: var(--wine2);
+}
+.alert-green{
+    color: var(--dark-green);
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid ; */
+    border-radius: 4px;
+}
+
+
+.button-link {
+    color: var(--wine2);
+    text-decoration: none;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.form-group-policy{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.form-group-policy input{
+    margin-right: 20px;
+}
+
+
+
+.alert-danger{
+    color: var(--wine2);
+}
+.alert-green{
+    color: var(--dark-green);
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 1px solid ; */
+    border-radius: 4px;
+}
+
+.button-link {
+    color: var(--wine2);
+    text-decoration: none;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.form-group-policy{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.form-group-policy input{
+    margin-right: 20px;
+}
+/* ----- diseño de una caja -----*/
