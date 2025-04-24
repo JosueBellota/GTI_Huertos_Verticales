@@ -103,15 +103,14 @@
   position: relative;
   height: 60px;
   width: 100%;
-  position: relative;
   background-color: #ffffff;  
   text-align: center;
 
 }
   
 .copyright {
-line-height: 60px; 
-margin: 0 auto;
+  line-height: 60px; 
+  margin: 0 auto;
 }
 
 /* --------------------------------- */

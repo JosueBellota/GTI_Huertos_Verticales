@@ -1,9 +1,7 @@
 <?php include('includes/menu.php'); ?>
 
 
-<div class="container" id="nosotros">
-
-    <h1 id="nosotros-title">Acerca de Nosotros</h1>
+<div id="nosotros">
 
     <div class="about-us-container">
         
@@ -23,10 +21,6 @@
             <p>Nos guiamos por valores que promueven el ahorro de recursos y el bienestar. Creemos en la tecnología como una herramienta terapéutica y sostenible para mejorar la vida de las personas y proteger nuestro planeta.</p>
         </div>
     </div>
-
-    <div class="space"></div>
-
-    <div class="space"></div>
 
 </div>
 

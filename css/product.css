@@ -1,4 +1,3 @@
-
 /* -------------------------------------------- */
 /* ----------Estilos Pagina Producto ------------- */
 /* ---------------------------------------- */
@@ -10,9 +9,16 @@
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
 
+    
+    display: flex;
+    justify-content: center;                
+    margin: 0; 
+    
+
 }
 
 .card-product{
+
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -61,12 +67,13 @@
 .description {
 
     width: 40%;
+
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
     border: 1px solid var(--gray);
     background-color: var(--white);
-    height: fit-content;
+    height: 400px;
 
 }
 
@@ -87,6 +94,12 @@
 /* --------------------------------- */
 /* ----------Estilos Responsive---- */
 /* ---------------------------------- */
+
+
+
+
+
+
 @media (max-width: 1115px) {
 
     .card-product{
@@ -96,11 +109,32 @@
     }
 }
 
+
+@media (max-width: 1005px) {
+
+    .description{
+
+        height: fit-content;
+
+    }
+}
+
+
+
+
+
 @media (max-width: 900px) {
+
+    
+    .container-product {
+    
+        height: fit-content;
+        padding-bottom: 5%;
+
+    }
 
     .card-product{
         flex-direction: column;
-        height: calc(100vh - 160px);
     }
 
     .description {
@@ -113,6 +147,7 @@
         flex: 0 0 60%;
         order: 2;
         width: 100%;
+        height: fit-content;
         padding: 0;
     }
 
@@ -124,12 +159,6 @@
         border: 2px solid white;
     }
     
-    /* .thumbnails {
-        justify-content: flex-start;
-    }  */
-    
-
-
 }
 
 @media (max-width: 700px) {
@@ -153,5 +182,30 @@
     }
 
     
-  }
+}
+
+@media (max-width: 600px) {
+
+    .card-product{
+        height: 100%;
+    }
+
+}  
+
+  @media (max-height: 850px) {
+
+
+    .description {
+        flex: 0 0 30%;
+        width: 100%;
+        height: fit-content;
+    }
+  
+    .gallery {
+        flex: 0 0 70%;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+    }
+}
   
