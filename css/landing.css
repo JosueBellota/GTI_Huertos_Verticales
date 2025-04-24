@@ -41,18 +41,10 @@
 }
 
 
-@media (max-height: 800px) {
+/* --------------------------------- */
+/* Media Query Ajustes Pantalla Horizontal */
+/* ---------------------------------- */
 
-    .content-container {
-        width: 80%;
-        position: absolute;
-        bottom: 30%;
-        left: 10%;
-        padding: 20px;
-        border-radius: 10px;
-        
-    }
-  }
 
 @media (max-width: 1220px) {
 
@@ -112,3 +104,21 @@
         padding: 0;
     }
 }
+
+/* --------------------------------------*/
+/* Media Query Ajustes Pantalla Vertical */
+/* -------------------------------------- */
+
+@media (max-height: 800px) {
+
+    .content-container {
+        width: 80%;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+  }
+

@@ -3,15 +3,23 @@
 /* ---------------------------------- */
 
 #nosotros{
-    height: calc(100vh - 180px);
-    background-color: red;
+    height: calc(100vh - 140px);
+    background-color: transparent;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+
+    display: flex;
+    justify-content: center;                
+    margin: 0; 
+    
 }
 
 #nosotros-title{    
-    
+
     text-align: center;
     margin: 40px 0;
     color: var(--white);
+
 }
 
 .about-us-container {
@@ -27,7 +35,7 @@
 .about-column {
     
     width: 30%;
-    height: 400px;
+    height: 450px;
     padding: 20px;
     box-sizing: border-box;
     background-color: var(--white);
@@ -76,8 +84,32 @@
 .arrow-link:hover {
     background-color: #0056b3;
 }
+
+/* --------------------------------- */
+/* Media Query Ajustes Pantalla Horizontal */
+/* ---------------------------------- */
+
+@media (max-width: 900px){
+
+    .about-column {
+    
+        width: 30%;
+        height: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: var(--white);
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+}
     
 @media (max-width: 788px){
+
+    #nosotros{
+        height:fit-content
+        
+    }
 
     .about-us-container{
         flex-direction: column;
@@ -85,9 +117,59 @@
     }
     .about-column{
         width: 90%;
+        height: fit-content;
+        margin: 20px;
+        padding: 20px;
+    }
+    .about-column p{
+        margin: 0 auto;
+    }
+
+}
+
+
+/* --------------------------------------*/
+/* Media Query Ajustes Pantalla Vertical */
+/* -------------------------------------- */
+
+@media (max-height: 700px) {
+
+    .about-column {
+    
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 1400px) and (max-height: 700px){
+
+    .about-column {
+    
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1200px) and (max-height: 700px){
+
+    #nosotros{
+        height:fit-content
+        
+    }
+
+    .about-us-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-column{
+        width: 90%;
+        height: fit-content;
+        margin: 20px;
+        padding: 20px;
     }
     .about-column p{
         margin: 0 auto;
     }
 }
+
+
 

@@ -1,6 +1,6 @@
-/* -------------------------------------------- */
+/* ----------------------------------------------- */
 /* ----------Estilos Pagina Producto ------------- */
-/* ---------------------------------------- */
+/* ----------------------------------------------- */
 
 .container-product {
     
@@ -8,7 +8,6 @@
     background-color: transparent;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
-
     
     display: flex;
     justify-content: center;                
@@ -159,6 +158,11 @@
         border: 2px solid white;
     }
     
+}
+
+@media (max-width: 800px){
+
+
 }
 
 @media (max-width: 700px) {
