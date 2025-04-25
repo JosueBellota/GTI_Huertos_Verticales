@@ -8,7 +8,6 @@
   align-items: center;
   height: 80px;
   background-color: #fff;
-  border-bottom: 2px solid black;
 }
 
 .header__container {
@@ -144,7 +143,6 @@
 
 .footer {
   position: relative;
-  border-top: 2px solid black;
   height: 60px;
   width: 100%;
   position: relative;

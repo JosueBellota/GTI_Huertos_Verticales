@@ -4,10 +4,10 @@
 session_start();
 
 // Crear Constantes para Almacenar Valores No Repetitivos
-define('SITEURL', 'https://jbelich.upv.edu.es/src/'); // Actualiza la URL principal del proyecto según sea necesario
-define('LOCALHOST', 'localhost:3306');
-define('DB_USERNAME', 'jbelich_user');
-define('DB_PASSWORD', 'Bellota@1769');
+define('SITEURL', 'http://localhost:8000/'); // Actualiza la URL principal del proyecto según sea necesario
+define('LOCALHOST', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'jbelich_huertosverticales');
 
 // Conexión a la Base de Datos

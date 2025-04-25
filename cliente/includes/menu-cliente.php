@@ -63,7 +63,7 @@ if ($stmt = $conn->prepare($sql)) {
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="css/menufootercliente.css">
     <!-- <link rel="stylesheet" href="../css/cliente.css"> -->
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="../css/landing.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/huertos.css">
     <link rel="stylesheet" href="css/instalaciones.css">
