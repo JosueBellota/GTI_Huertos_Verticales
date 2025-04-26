@@ -1,9 +1,10 @@
 <?php
 include("includes/menu-cliente.php");
 
-// Mensajes de éxito (si existen)
+
 $success_msg = isset($_SESSION["success_msg"]) ? $_SESSION["success_msg"] : '';
 unset($_SESSION["success_msg"]);
+
 ?>
 <div class="perfil-page">
     <div class="perfil-container">

@@ -1,16 +1,13 @@
-
-/* Estilos específicos para el menú de huertos */
-.welcome {
+.huertos_container {
     padding: 20px;
-    background-image: url('../../img/panel.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+
+
 }
 
-.welcome h1,
-.welcome h4 {
+.huertos_container h1,
+.huertos_container h4 {
     text-align: center;
     color: #fff;
 }
@@ -22,7 +19,6 @@
     margin: 0 auto;
     
     padding: 20px;
-    border-radius: 8px;
 }
 .huerto-msg p{
 
@@ -40,7 +36,6 @@
 .huerto-card {
     background-color: #f8f9fa; /* Color de fondo de las tarjetas de huerto */
     padding: 15px;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px; /* Ancho máximo de las tarjetas */
     text-align: center;

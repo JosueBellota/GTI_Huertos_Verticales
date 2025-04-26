@@ -7,7 +7,7 @@
                 data: [],
                 unit: '°C',
                 fill: true,
-                backgroundColor: 'rgba(97, 190, 35, 0.0)',
+                backgroundColor: 'rgba(97, 190, 35, 0.3)',
                 borderColor: '#61be23',
                 yAxisID: 'y-temp',
                 tension: .5,
@@ -18,7 +18,7 @@
                 label: 'Luminosidad (lx)',
                 data: [],
                 fill: true,
-                backgroundColor: 'rgba(67, 116, 143, 0.0)',
+                backgroundColor: 'rgba(67, 116, 143, 0.3)',
                 borderColor: '#43748F',
                 yAxisID: 'y-humidity',
                 tension: .5,
@@ -29,7 +29,7 @@
                 label: 'Ph (ph)',
                 data: [],
                 fill: true,
-                backgroundColor: 'rgba(97, 139, 37, 0.0)',
+                backgroundColor: 'rgba(97, 139, 37, 0.3)',
                 borderColor: '#618B25',
                 yAxisID: 'y-pressure',
                 tension: .4,
@@ -40,7 +40,7 @@
                 label: 'Salinidad (g/L)',
                 data: [],
                 fill: true,
-                backgroundColor: 'rgba(89, 0, 58, 0.0)',
+                backgroundColor: 'rgba(89, 0, 58, 0.3)',
                 borderColor: '#59003a',
                 yAxisID: 'y-wind',
                 tension: .3,
@@ -51,7 +51,7 @@
                 label: 'Temperatura (°C)',
                 data: [],
                 fill: true,
-                backgroundColor: 'rgba(0, 0, 0, 0.0)',
+                backgroundColor: 'rgba(0, 0, 0, 0.3)',
                 borderColor: '#000000',
                 yAxisID: 'y-precipitation',
                 tension: .2,
@@ -80,6 +80,7 @@
             'y-temp': {
                 type: 'linear',
                 position: 'left',
+                display: false, 
                 ticks: {
                     color: '#61be23',
                     font: {
@@ -95,6 +96,7 @@
             'y-humidity': {
                 type: 'linear',
                 position: 'left',
+  
                 ticks: {
                     color: '#43748F',
                     font: {
@@ -110,6 +112,7 @@
                 type: 'linear',
                 position: 'left',
                 offset: true,
+                display: false, 
                 ticks: {
                     color: '#618B25',
                     font: {
@@ -125,6 +128,7 @@
                 type: 'linear',
                 position: 'left',
                 offset: true,
+                display: false, 
                 ticks: {
                     color: '#59003a',
                     font: {
@@ -140,6 +144,7 @@
                 type: 'linear',
                 position: 'left',
                 offset: true,
+                display: false, 
                 ticks: {
                     color: '#000000',
                     font: {
@@ -170,11 +175,36 @@
         },
     };
 
+    
+/* --------------------------------- */
+/* Background image for the chart -- */
+/* ----------------------------------*/
+
+
+    const backgroundImage = new Image();
+    backgroundImage.src = '../img/panel.jpg'; 
+
+    const imagePlugin = {
+        id: 'custom_canvas_background_image',
+        beforeDraw: (chart) => {
+            if (backgroundImage.complete) {
+                const ctx = chart.ctx;
+                const {width, height} = chart;
+                ctx.save();
+                ctx.globalAlpha = 0.3; // Optional: set transparency
+                ctx.drawImage(backgroundImage, 0, 0, width, height);
+                ctx.restore();
+            }
+        }
+    };
+
+
     let ctx = document.getElementById('chart').getContext('2d');
     let miGrafica = new Chart(ctx, {
         type: 'line',
         data: datos,
         options: opciones,
+        plugins: [imagePlugin]
     });
 
 

@@ -29,7 +29,7 @@ if ($stmt = $conn->prepare($sql)) {
 }
 ?>
 
-<div class="welcome">
+<div class="huertos_container">
     <div class="space"></div>
     <h1>TUS HUERTOS</h1>
     <h4>Selecciona uno de tus Huertos</h4>

@@ -1,19 +1,17 @@
 
 <?php
 
-// Incluir el archivo de configuración de la base de datos
 require_once "../config/constants.php";
 
-// Verify if the user is authenticated
+
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-  // Redirect the user to the public login page
+
   header("location: ../login.php");
   exit;
-}
-// Obtener información del usuario desde la sesión
-$usuario_id = $_SESSION["usuario_id"];
 
-// Preparar la consulta SQL para obtener todos los datos del usuario
+}
+
+$usuario_id = $_SESSION["usuario_id"];
 $sql = "SELECT * FROM Usuarios WHERE usuario_id = ?";
 
 if ($stmt = $conn->prepare($sql)) {
@@ -62,7 +60,7 @@ if ($stmt = $conn->prepare($sql)) {
    
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="css/menufootercliente.css">
-    <!-- <link rel="stylesheet" href="../css/cliente.css"> -->
+    <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/landing.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/huertos.css">

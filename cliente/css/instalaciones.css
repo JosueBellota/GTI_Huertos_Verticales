@@ -1,13 +1,58 @@
-.cliente-page{
 
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    
+.instalaciones-page{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(248,248,248,0) 50%, rgba(0,0,0,1) 76%);
+    min-height: calc(100vh - 140px);
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 
-.cliente-page h2{
-    color: #fff;
+
+.instalaciones-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 80%;
+
+}
+
+.instalacion_controls {
+    flex: 0 0 10%;
+    order: 1;
+    background-color: var(--white);
+}
+
+.chart-container {
+    flex: 0 0 70%;
+    order: 2;
+    background-color: transparent;
+}
+
+.chart-buttons {
+    flex: 0 0 10%;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.space {
+    height: 20px;
+}
+
+
+.chart{
+
+    padding: 20px;
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    background: var(--white) ;
 }
 
 
@@ -17,55 +62,15 @@
     padding: 5px 20px;
     width: 100px;
     height: 45px;
-    background-color: var(--wine);
-    color: white;
+    background-color: var(--wine2);
+    color: var(--white);
     border: none;
-    border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .edit-link2:hover {
-    background-color: var(--wine2);
-}
-
-/* filtros */
-.chart-controls2{
-    display: flex;
-    width: fit-content;
-    margin: 0 auto;
-
-}
-
-.chart-controls2 label {
-    font-size: 16px;
-    margin-right: 10px;
-    color: #fff;
-    font-weight: bold;
-
-
-
-}
-
-.chart-controls2 select {
-    padding: 8px 12px;
-    font-size: 14px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background-color: #fff;
-    
-    width: 200px;
-    max-width: 100%;
-}
-
-.chart-controls2 div {
-    margin: 10px;
-    width: fit-content;
-}
-
-
-.cliente-page h2, h4{
-    text-align: center;
+    background: var(--wine);
 }
 
 .chart-controls{
@@ -82,15 +87,7 @@
 
 
 
-.chart-buttons{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 
 
@@ -178,25 +175,17 @@
 
 
 .chart-container {
-    position: relative;
+    /* position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #fff; */
 }
 
 
 .chart-container h3{
     padding: 100px;
     text-align: center;
-}
-
-#chart{
-
-    position: relative;
-
-    height:500px !important;
-
 }
 
 .register-action-group{
@@ -210,82 +199,45 @@
     display: block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
+    
+    .instalaciones-page{
+
+        height: 100%;
+
+    }
+
+    .instalaciones-page{
+        justify-content: left;
+        padding-left: 40px;
+    }
+}
+
+
+
+@media (max-width: 1420px) {
+
+    .chart{
+
+        width: 900px;
+       
+    }
+}
+
+@media (max-width: 1420px) {
 
     .chart-container {
-        position: relative;
-        height: fit-content;
-        margin: 0 auto;
-        background-color: #fff;
-        /* background-color: red; */
+        flex: 0 0 60%;
+        order: 2;
+        background-color: var(--white);
     }
-
-    .edit-link2 {
-
-        font-size: 16px !important;
-    }
+    
 
 }
 
 @media (max-width: 600px) {
 
-    .cliente-page{
-        width: 100%;
-    }
 
-    .chart-controls2{
-        flex-direction: column;
-    }
-    
-
-
-    .chart-buttons{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
-    .toggle-btn {
-
-    padding: 2px 2px;
-    margin: 2px 0;
-    font-size: 12px;
-    width: 100px;
-    height: 50px;
-
-    }
-
-
-
-    .chart-container {
-        position: relative;
-        margin: 0 auto;
-        height: fit-content;
-        background-color: #fff;
-        /* background-color: red; */
-    }
-
-    .chart-controls2 label {
-        font-size: 16px;
-        margin-right: 10px;
-        color: #fff;
-        font-weight: bold;
-    
-    
-    
-    }
-    
-    .chart-controls2 select {
-        padding: 8px 12px;
-        font-size: 14px;
-        border: 1px solid #fff;
-        border-radius: 4px;
-        background-color: #fff;
-        
-        width: 200px;
-        max-width: 100%;
-    }
 
 
 }
