@@ -134,26 +134,24 @@ $error_msg = $_GET['error_msg'] ?? '';
 <div class="instalaciones-page">
 
 
-        <!-- <div class="space"></div>
-        <h2><?php echo htmlspecialchars($nombre_huerto); ?></h2>
-        <div class="space"></div>
-        
-        <?php if (!empty($success_msg)): ?>
-            <p class="alert-success"><?php echo htmlspecialchars($success_msg); ?></p>
-        <?php endif; ?>
+    
 
-        <?php if (!empty($error_msg)): ?>
-            <p class="alert-danger"><?php echo htmlspecialchars($error_msg); ?></p>
-        <?php endif; ?> -->
+    
 
-    <div class="instalaciones-container">
+        <div class="">
         
 
+        <div class="instalaciones-title">
 
-       
-        <div class="instalacion_controls">
-        
+            <h1><?php echo htmlspecialchars($nombre_huerto); ?></h1>
+            <h4>Selecciona una de tus Instalaciones</h4>
+        </div>
+
+        <div class="instalaciones-container">
+
+            <div class="instalacion_controls">
             
+                
             <div class="s1">
                 <label for="instalacion">Seleccionar Instalación:</label>
                 <select id="instalacion">
@@ -171,7 +169,39 @@ $error_msg = $_GET['error_msg'] ?? '';
                     <option value="3">3 medidas</option>
                 </select>
             </div>
-    
+            <script>
+            
+            function reorderOptions() {
+                const select = document.getElementById('filtro-medidas');
+                const options = Array.from(select.options);
+                
+                if (window.innerWidth < 700) { // aquí defines el ancho que quieras
+                    // Reordenar para pantallas pequeñas
+                    select.innerHTML = '';
+                    select.add(new Option('3 medidas', '3'));
+                    select.add(new Option('5 medidas', '5'));
+                    select.add(new Option('7 medidas', '7'));
+                } else {
+                    // Orden original para pantallas grandes
+                    select.innerHTML = '';
+                    select.add(new Option('7 medidas', '7'));
+                    select.add(new Option('5 medidas', '5'));
+                    select.add(new Option('3 medidas', '3'));
+                }
+
+
+                filtrarMediciones();
+                
+                }
+
+            // Ejecutar al cargar la página
+            window.addEventListener('load', reorderOptions);
+
+            // Ejecutar cuando redimensionan la ventana
+            window.addEventListener('resize', reorderOptions);
+
+            </script>
+
             <div class="s1">
                 <a href="agregarInstalacion.php?huerto_id=<?php echo $huerto_id; ?>" class="edit-link2">Agregar Instalación</a>
                 
@@ -209,6 +239,10 @@ $error_msg = $_GET['error_msg'] ?? '';
                 <?php endif; ?>
             </div>
         </div>
+        
+        </div>
+       
+
   
     </div>
 </div>
