@@ -33,13 +33,14 @@ if ($stmt = $conn->prepare($sql)) {
     <div class="space"></div>
     <h1>TUS HUERTOS</h1>
     <h4>Selecciona uno de tus Huertos</h4>
-    <div class="space"></div>
     <div class="huerto-msg">
     <?php
+
     if (isset($_SESSION['message'])) {
         echo '<p class="alert-green">' . $_SESSION['message'] . '</p>';
         unset($_SESSION['message']);
     }
+    
     ?>
     </div>
     

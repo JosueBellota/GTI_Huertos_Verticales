@@ -17,6 +17,7 @@
                     // Redirect to product.html
                     window.location.href = "producto.php";
                 }
+                
             </script>
         </div>
     </div>
